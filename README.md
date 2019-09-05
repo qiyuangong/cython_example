@@ -5,6 +5,7 @@ A Cython Example based on [The Performance of Python, Cython and C on a Vector](
 Requirement:
 
 ```bash
+sudo apt-get install python-dev python3-dev
 pip install Cython
 ```
 

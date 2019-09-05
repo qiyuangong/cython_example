@@ -3,7 +3,6 @@ from os.path import join as pjoin
 from setuptools import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
-import subprocess
 import numpy as np
 
 # Obtain the numpy include directory.  This logic works across numpy versions.
