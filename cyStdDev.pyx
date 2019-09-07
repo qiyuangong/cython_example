@@ -30,8 +30,10 @@ def cyOptStdDev(ndarray[np.float64_t, ndim=1] a not None):
         v += (a[i] - m)**2
     return sqrt(v / n)
 
+
 cdef extern from "std_dev.h":
     double std_dev(double *arr, size_t siz)
+
 
 def cStdDev(ndarray[np.float64_t, ndim=1] a not None):
     return std_dev(<double*> a.data, a.size)
